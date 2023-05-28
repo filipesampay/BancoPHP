@@ -1,0 +1,156 @@
+/*Limpando formatações padrões*/
+* {
+    margin: 0;
+    padding: 0;
+}
+/* Definindo um layout padrao para o body do site */
+body {
+    font-size: 1em;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    background: #e6e6e6;
+}
+
+/*
+****Layout do Site****
+*/
+
+#area-cabecalho {
+    background-color: #4B0082;
+    padding: 15px;
+    text-align: center;
+}
+
+#area-logo, #area-menu {
+    padding: 10px;
+}
+
+#area-principal {
+    width: 920px;
+    margin: 40px auto;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+#container {
+    display: flex;
+}
+
+.divisoria{
+    display: flex;
+    flex-flow: column;
+    max-height: 100%;
+    grid-area: page-content;
+}
+
+.caixa {
+    background: #4B0082;
+    border: 1px solid black;
+    color: #FFF;
+    width: 220px;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    clear: both;
+    text-align: center;
+    font-size: 0.7em;
+  }
+
+/*
+****** Formatação do menu ****
+*/ 
+
+a {
+    text-decoration: none;
+}
+
+.linkmenu:link, .linkmenu:visited {
+    color: #FFF;
+    padding: 8px 12px;
+}
+
+.linkmenu:hover {
+    color: #4B0082;
+    background: #FFF;
+}
+
+/*
+******Formatação Geral********
+*/
+
+h1 {
+    color: white;
+    -webkit-text-stroke-width: 1.2px;
+    -webkit-text-stroke-color: #000;
+    font-size: 2.5em;
+}
+
+.amarelo{
+    color: rgb(238, 241, 22);
+}
+
+.preto{
+    color: black;
+}
+
+.verde{
+    color: rgb(72, 241, 72);
+}
+
+.branco{
+    color: white;
+}
+form {
+    width: 400px;
+    margin: 120 auto;
+    text-align: left;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    }
+    
+    label {
+    font-weight: bold;
+    margin-top: 10px;
+    display: block;
+    }
+    
+    input[type="text"], input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+    }
+    
+    input[type="submit"] {
+    background-color: #4B0082;
+    color: white;
+    cursor: pointer;
+    }
+
+    select {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        margin-top: 6px;
+        margin-bottom: 16px;
+        font-size: 16px;
+      }
+
+      input[type='number'] {
+        margin-bottom: 1rem;
+        padding: 0.5rem;
+        border-radius: 4px;
+        border: 1px solid gray;
+        width: 200px;
+        height: 30px;
+        text-align: center;
+    }

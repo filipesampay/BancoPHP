@@ -1,0 +1,27 @@
+<html>
+  <head>
+    <title>Cadastro de clientes bancários</title>
+    <title>BancOn - O seu banco sempre online</title>
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+  </head>
+  <body>
+    <div id="area-cabecalho">
+
+      <div id="area-logo">
+          <h1>Banc<span class="verde">On</span></h1>
+      </div>
+     <div id="area-menu">
+          <a class="linkmenu" href="index.html">Home</a>
+          <a class="linkmenu" href="banco.html">Banco</a>
+          <a class="linkmenu" href="conta.html">Conta</a>
+          <a class="linkmenu" href="pesquisa.html">Listas</a>
+      </div>
+  </div>
+
+    <!-- FORMULÁRIO PARA O USUÁRIO INFORMAR OS DADOS -->
+    <form action="buscarcontas.php" method="get">
+   Nome do cliente: <input type="text" name='nome_do_cliente'><br><br>
+   <input type="submit" value="Pesquisar">
+</form> 
+  </body>
+</html>

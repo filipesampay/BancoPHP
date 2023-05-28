@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Transferir dinero</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+</head>
+<body>
+    <div id="area-cabecalho">
+
+        <div id="area-logo">
+            <h1>Banc<span class="verde">On</span></h1>
+        </div>
+        <div id="area-menu">
+            <a class="linkmenu" href="index.html">Home</a>
+            <a class="linkmenu" href="banco.html">Banco</a>
+            <a class="linkmenu" href="conta.html">Conta</a>
+            <a class="linkmenu" href="pesquisa.html">Listas</a>
+        </div>
+    </div>
+
+    <div id="area-principal">
+    
+    <div id="container" class="divisoria">
+    <form action="transferirdinheiro.php" method="get">
+
+   <label for="numero_da_conta_origem">Número da conta de origem:</label>
+   <input type="text"  name='numero_da_conta_origem'><br/><br/>
+
+   <label for="numero_da_conta_destino">Número da conta de destino:</label>
+   <input type="text"  name='numero_da_conta_destino'><br/><br/>
+
+   <label for="valor_da_transferencia">Valor da transferência:</label>
+   <input type="text"  name='valor_da_transferencia'><br/><br/>
+
+   <input type="submit" value="Enviar">
+
+</form>
+</body>
+</html>

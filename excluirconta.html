@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Excluir conta corrente</title>
+      <meta charset="UTF-8">
+      <link rel="stylesheet" type="text/css" href="estilo.css">
+   </head>
+   <body>
+      <div id="area-cabecalho">
+
+         <div id="area-logo">
+             <h1>Banc<span class="verde">On</span></h1>
+         </div>
+         <div id="area-menu">
+             <a class="linkmenu" href="index.html">Home</a>
+             <a class="linkmenu" href="banco.html">Banco</a>
+             <a class="linkmenu" href="conta.html">Conta</a>
+             <a class="linkmenu" href="pesquisa.html">Listas</a>
+         </div>
+     </div>
+ 
+     <div id="area-principal">
+     
+     <div id="container" class="divisoria">
+      <form action="excluirconta.php" method="get">
+         <label for="numero_da_conta">Informe um número da conta:</label>
+         <input type="text" id="numero_da_conta" name='numero_da_conta'>
+         <input type="submit" value="Enviar">
+      </form>
+   </body>
+</html>

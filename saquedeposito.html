@@ -1,0 +1,38 @@
+<html>
+  <head>
+    <title>Envio de dados para PHP</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+  </head>
+  <body>
+    <div id="area-cabecalho">
+
+      <div id="area-logo">
+          <h1>Banc<span class="verde">On</span></h1>
+      </div>
+      <div id="area-menu">
+          <a class="linkmenu" href="index.html">Home</a>
+          <a class="linkmenu" href="banco.html">Banco</a>
+          <a class="linkmenu" href="conta.html">Conta</a>
+          <a class="linkmenu" href="pesquisa.html">Listas</a>
+      </div>
+  </div>
+
+  <div id="area-principal">
+  
+  <div id="container" class="divisoria">
+    <form action="saquedeposito.php" method="get">
+      <p>Escolha uma opção Saque/Deposito:</p>
+      <select name='operacao'>
+        <option value="saque">Saque</option>
+        <option value="deposito">Deposito</option>
+        </select>
+        <p>Valor do Saque/Deposito:</p>
+        <input type="number" name='valor'><br>
+      <br>
+      <p>Numero da Conta Corrente:</p>
+      <input type="number" name='conta'><br>
+      <input type="submit" value="Enviar">
+    </form>
+  </body>
+</html>

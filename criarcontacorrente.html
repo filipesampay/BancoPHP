@@ -1,0 +1,52 @@
+<html>
+  <head>
+    <title>Cadastro de clientes bancários</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+  </head>
+  <body>
+    <div id="area-cabecalho">
+
+      <div id="area-logo">
+          <h1>Banc<span class="verde">On</span></h1>
+      </div>
+      <div id="area-menu">
+          <a class="linkmenu" href="index.html">Home</a>
+          <a class="linkmenu" href="banco.html">Banco</a>
+          <a class="linkmenu" href="conta.html">Conta</a>
+          <a class="linkmenu" href="pesquisa.html">Listas</a>
+      </div>
+  </div>
+
+    <!-- FORMULÁRIO PARA O USUÁRIO INFORMAR OS DADOS -->
+    <form action="criarcontacorrente.php" method="get">
+
+      <label>Nome do cliente:</label>
+      <input type="text" name='nome_do_cliente'>
+      <br><br>
+
+      <label>CPF:</label>
+      <input type="text" name='CPF'>
+      <br><br>
+
+      <label>Endereço:</label>
+      <input type="text" name='endereco'>
+      <br><br>
+
+      <label>Nome do Banco:</label>
+      <input type="text" name='nome_do_banco'>
+      <br><br>
+
+      <label>Número da conta:</label>
+      <input type="text" name='numero_da_conta'>
+      <br><br>
+
+      <label>Número da agência:</label>
+      <input type="text" name='numero_da_agencia'>
+      <br><br>
+
+      <input type="submit" value="Enviar Dados">
+
+    </form>
+  </body>
+</html>

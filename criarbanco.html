@@ -1,0 +1,37 @@
+<html>
+  <head>
+    <title>Envio de Informações</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+  </head>
+  <body>
+    <div id="area-cabecalho">
+
+      <div id="area-logo">
+          <h1>Banc<span class="verde">On</span></h1>
+      </div>
+     <div id="area-menu">
+          <a class="linkmenu" href="index.html">Home</a>
+          <a class="linkmenu" href="banco.html">Banco</a>
+          <a class="linkmenu" href="conta.html">Conta</a>
+          <a class="linkmenu" href="pesquisa.html">Listas</a>
+      </div>
+  </div>
+
+    <form action='criarbanco.php' method="get">
+      <label for="nome_do_banco">Nome do Banco:</label>
+      <input type="text" id="nome_do_banco" name='nome_do_banco'>
+      
+      <label for="numero_da_agencia">Número da Agência:</label>
+      <input type="text" id="numero_da_agencia" name='numero_da_agencia'>
+      
+      <label for="endereco">Endereço:</label>
+      <input type="text" id="endereco" name='endereco'>
+      
+      <label for="bandeira">Bandeira:</label>
+      <input type="text" id="bandeira" name='bandeira'>
+      
+      <input type="submit" value="Enviar">
+    </form>
+  </body>
+</html>
